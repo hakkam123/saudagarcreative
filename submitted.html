@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Formulir</title>
+  <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" type="image/x-icon" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            clifford: "#da373d",
+            saudagar: "#0088da",
+          },
+          fontSize: {
+            '16': '16px',
+            '20': '20px',
+            '24': '24px',
+            '28': '28px',
+            '32': '32px',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body>
+  <div class="sticky">
+    <div class="navbar-container" id="navbarContainer">
+      <a href="index.html" class="navbar-brand">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100" alt="Company Logo" />
+        <span>Saudagar Creative</span>
+      </a>
+      <div class="navbar-toggle" id="navbarToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </div>
+      <div class="navbar-menu" id="navbarMenu">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="service.html">Layanan</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="#footer">Kontak</a>
+      </div>
+    </div>
+  </div>
+
+  

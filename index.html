@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #F8C219;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #F8C219;
+      }
+    </style>
+    <title>Saudagar Creative</title>
+    <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" type="image/x-icon" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              clifford: "#da373d",
+              saudagar: "#0088da",
+            },
+            fontSize: {
+              '16': '16px',
+              '20': '20px',
+              '24': '24px',
+              '28': '28px',
+              '32': '32px',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sticky">
+      <div class="navbar-container" id="navbarContainer">
+        <a href="index.html" class="navbar-brand">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100" alt="Company Logo" />
+          <span>Saudagar Creative</span>
+        </a>
+        <div class="navbar-toggle" id="navbarToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+          <a href="index.html" class="active">Beranda</a>
+          <a href="about.html">Tentang Kami</a>
+          <a href="service.html">Layanan</a>
+          <a href="portofolio.html">Portofolio</a>
+          <a href="#footer">Kontak</a>
+        </div>
+      </div>
+    </div>
+    <section class="hero-section">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c680cf555e2c806ede36310b0160870d0240d1b5b71c0fb554a51f5dc7f82df7?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="" class="hero-background" />
+      <h1 class="hero-title">
+        <p class="hero-description">Solusi</p>
+        <p class="hero-description">Digital Marketing</p>
+        <p class="hero-description">UMKM</p>
+      </h1>
+      <a href="#layanankami" class="cta-button">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/42798c3e8e5998a165c86bb28ceb3c856afc4c4bed507308839f320c97eb37ad?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" alt="" class="cta-button-background" />
+        <span class="cta-button-text">Selengkapnya</span>
+      </a>
+    </section>
+    <div id="tentang">
+      <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+        <div class="flex flex-col w-2/5 max-md:ml-0 max-md:w-full">
+          <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/7b38a3b9-fcfb-485f-ba03-efd3f14d3142?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" class="mt-24 ml-8 w-full aspect-[1.89] max-w-[482px] max-md:my-auto max-md:ml-6 max-md:max-w-[333px] max-sm:mx-5 max-sm:mt-20 max-sm:max-w-[325px]" />
+        </div>
+        <div class="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
+          <div class="flex flex-col grow px-5 text-2xl max-md:mt-10 max-md:max-w-full">
+            <div id="text-tentangkami" class="pr-7 mt-28 mr-0 font-medium text-left text-black max-md:max-w-full max-sm:pr-0 max-sm:mt-8 max-sm:ml-1 max-sm:text-justify max-sm:text-[22px]"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus mi, pharetra quis porttitor eu, porta nec mi. Sed sit amet faucibus massa. Maecenas sodales, dui et mattis dictum, turpis lacus lobortis quam, ut sagittis felis quam non justo. Interdum et malesuada fames ac ante ipsum </div>
+            <div class="max-sm:-mt-px">
+              <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                  <button class="box-border relative shrink-0 px-6 py-4 mt-8 font-semibold  text-center bg-sky-600 appearance-none cursor-pointer rounded-[50px] text-[white] max-sm:mt-12" data-el="button-1">
+                    <a href="about.html">Tentang Kami</a>
+                  </button>
+                </div>
+                <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="layanankami" class="flex flex-col items-center px-5 mt-24">
+      <div class="self-center mt-12 text-5xl font-semibold text-black max-md:text-4xl"> Layanan Kami </div>
+      <div class="mt-16 w-full max-w-5xl max-md:mt-10">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="flex flex-col w-96 max-md:w-full">
+                <div class="flex flex-col grow p-16 font-semibold bg-sky-600 rounded-[60px] max-md:px-5 max-md:mt-10">
+                  <div class="mx-auto text-3xl text-orange-100">Lorem Ipsum</div>
+                  <button class="box-border relative shrink-0 p-4 mt-72 text-xl text-center text-sky-600 bg-white cursor-pointer rounded-[50px]">Tertarik?</button>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="flex flex-col w-96 max-md:w-full">
+                <div class="flex flex-col grow px-16 py-16 mt-1.5 font-semibold bg-emerald-200 rounded-[60px] max-md:px-5 max-md:mt-10">
+                  <div class="mx-auto text-3xl text-sky-600">Lorem Ipsum</div>
+                  <button class="box-border relative shrink-0 p-4 mt-72 text-xl text-center text-sky-600 bg-white cursor-pointer rounded-[50px]">Tertarik?</button>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="flex flex-col w-96 max-md:w-full">
+                <div class="flex flex-col grow p-16 font-semibold bg-sky-600 rounded-[60px] max-md:px-5 max-md:mt-10">
+                  <div class="mx-auto text-3xl text-orange-100">Lorem Ipsum</div>
+                  <button class="box-border relative shrink-0 p-4 mt-72 text-xl text-center text-sky-600 bg-white cursor-pointer rounded-[50px]">Tertarik?</button>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="flex flex-col w-96 max-md:w-full">
+                <div class="flex flex-col grow px-16 py-16 mt-1.5 font-semibold bg-emerald-200 rounded-[60px] max-md:px-5 max-md:mt-10">
+                  <div class="mx-auto text-3xl text-sky-600">Lorem Ipsum</div>
+                  <button class="box-border relative shrink-0 p-4 mt-72 text-xl text-center text-sky-600 bg-white cursor-pointer rounded-[50px]">Tertarik?</button>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="flex flex-col w-96 max-md:w-full">
+                <div class="flex flex-col grow p-16 font-semibold bg-sky-600 rounded-[60px] max-md:px-5 max-md:mt-10">
+                  <div class="mx-auto text-3xl text-orange-100">Lorem Ipsum</div>
+                  <button class="box-border relative shrink-0 p-4 mt-72 text-xl text-center text-sky-600 bg-white cursor-pointer rounded-[50px]">Tertarik?</button>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide flex justify-center">
+              <div class="flex flex-col w-96 max-md:w-full">
+                <div class="flex flex-col grow px-16 py-16 mt-1.5 font-semibold bg-emerald-200 rounded-[60px] max-md:px-5 max-md:mt-10">
+                  <div class="mx-auto text-3xl text-sky-600">Lorem Ipsum</div>
+                  <button class="box-border relative shrink-0 p-4 mt-72 text-xl text-center text-sky-600 bg-white cursor-pointer rounded-[50px]">Tertarik?</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <div id="blog" class="flex flex-col mt-24 px-5">
+      <!-- Blog Title -->
+      <div class="self-center mt-16 text-4xl font-bold text-black max-md:max-w-full max-sm:self-center max-sm:text-center"> Baca Juga Blog Kami </div>
+      <!-- Blog Cards -->
+      <div class="mt-16 w-full max-md:mt-10 max-md:max-w-full">
+        <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+          <!-- Blog Card 1 -->
+          <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+            <a href="blog.html"></a>
+            <div class="shrink-0 m-auto max-w-full bg-zinc-300 h-[293px] rounded-[53px] w-[568px] max-md:mt-10"></div>
+            </a>
+          </div>
+          <!-- Blog Card 2 -->
+          <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+            <a href="blog.html">
+              <div class="shrink-0 m-auto max-w-full bg-zinc-300 h-[293px] rounded-[53px] w-[568px] max-md:mt-10 max-sm:mt-8"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 w-full max-md:max-w-full max-sm:mt-5">
+        <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+          <!-- Blog Card 3 -->
+          <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+            <a href="blog.html">
+              <div class="shrink-0 mx-auto mb-auto max-w-full bg-zinc-300 h-[293px] rounded-[53px] w-[568px] max-sm:mt-2.5"></div>
+            </a>
+          </div>
+          <!-- Blog Card 4 -->
+          <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+            <a href="blog.html">
+              <div class="shrink-0 mx-auto max-w-full bg-zinc-300 h-[293px] rounded-[53px] w-[568px] max-md:mt-10 max-sm:mt-8 max-sm:mb-auto"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Call to Action Button -->
+      <div class="flex flex-col px-5 mx-auto mt-16 mb-20 font-semibold max-w-[613px]">
+        <div class="mx-auto mt-24 w-full text-5xl text-center text-black max-md:max-w-full max-md:text-4xl">
+          <span class="font-semibold">
+            <span class="font-bold">Siap</span> untuk bergabung bersama kami? </span>
+          <br />
+        </div>
+        <button class="box-border relative shrink-0 px-9 py-4 mx-auto mt-10 text-3xl text-center bg-saudagar appearance-none cursor-pointer rounded-[50px] text-[white]" data-el="button-1">
+          <a href="form.html">Saya Siap!</a>
+        </button>
+      </div>
+    </div>
+    <div id="footer" class="flex overflow-hidden relative flex-col justify-center items-center px-16 py-16 mt-28 fill-sky-600 min-h-[841px] max-md:px-5">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/476af924719178630fbbc31b7fce66fea9bd2003fb1bdc327aae009dca40bae7?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" class="object-cover absolute inset-0 size-full" />
+      <div class="flex relative flex-col mt-52 w-full max-w-[1186px] max-md:mt-10 max-md:max-w-full">
+        <div class="max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div class="flex flex-col w-3/5 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" class="w-full aspect-[2.13] max-md:mt-10 max-md:max-w-full" />
+            </div>
+            <div class="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col grow mt-9 text-3xl font-semibold text-white max-md:mt-10 max-md:max-w-full">
+                <div class="text-5xl max-md:max-w-full max-md:text-4xl max-sm:text-center"> Hubungi Kami: </div>
+                <div class="mt-14 text-4xl max-md:mt-10 max-md:max-w-full max-sm:mx-auto max-sm:text-xl max-sm:text-center"> PT. Saudagar Creative <br />
+                  <span class="text-xl not-italic font-semibold"> +62 XXXX XXXX <br />
+                  </span>
+                  <span class="text-xl not-italic font-semibold"> saudagarcreative@gmail.com </span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="self-center mt-52 text-2xl font-semibold text-white max-md:mt-10 max-sm:text-xl max-sm:text-center"> ©  2024. SaudagarCreative. </div>
+      </div>
+    </div>
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-[#F8C219] text-white text-3xl font-extrabold">&uarr;</button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var toTopButton = document.getElementById("to-top-button");
+      // When the user scrolls down 200px from the top of the document, show the button
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          toTopButton.classList.remove("hidden");
+        } else {
+          toTopButton.classList.add("hidden");
+        }
+      }
+      // When the user clicks on the button, smoothy scroll to the top of the document
+      function goToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      const mySwiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      (() => {
+        const state = {};
+        let context = null;
+        let nodesToDestroy = [];
+        let pendingUpdate = false;
+
+        function destroyAnyNodes() {
+          // destroy current view template refs before rendering again
+          nodesToDestroy.forEach((el) => el.remove());
+          nodesToDestroy = [];
+        }
+        // Function to update data bindings and loops
+        // call update() when you mutate state and need the updates to reflect
+        // in the dom
+        function update() {
+          if (pendingUpdate === true) {
+            return;
+          }
+          pendingUpdate = true;
+          document.querySelectorAll("[data-el='button-1']").forEach((el) => {
+            el.setAttribute("openLinkInNewTab", false);
+          });
+          document.querySelectorAll("[data-el='button-2']").forEach((el) => {
+            el.setAttribute("openLinkInNewTab", false);
+          });
+          document.querySelectorAll("[data-el='button-3']").forEach((el) => {
+            el.setAttribute("openLinkInNewTab", false);
+          });
+          document.querySelectorAll("[data-el='button-4']").forEach((el) => {
+            el.setAttribute("openLinkInNewTab", false);
+          });
+          document.querySelectorAll("[data-el='button-5']").forEach((el) => {
+            el.setAttribute("openLinkInNewTab", false);
+          });
+          document.querySelectorAll("[data-el='button-6']").forEach((el) => {
+            el.setAttribute("openLinkInNewTab", false);
+          });
+          destroyAnyNodes();
+          pendingUpdate = false;
+        }
+        // Update with initial state on first load
+        update();
+      })();
+      document.getElementById('navbarToggle').addEventListener('click', function() {
+        var navbarContainer = document.getElementById('navbarContainer');
+        if (navbarContainer.className === "navbar-container") {
+          navbarContainer.className += " responsive";
+        } else {
+          navbarContainer.className = "navbar-container";
+        }
+      });
+      $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function() {
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

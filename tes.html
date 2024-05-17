@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Formulir</title>
+    <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" type="image/x-icon" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              clifford: "#da373d",
+              saudagar: "#0088da",
+            },
+            fontSize: {
+              '16': '16px',
+              '20': '20px',
+              '24': '24px',
+              '28': '28px',
+              '32': '32px',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sticky">
+      <div class="navbar-container" id="navbarContainer">
+        <a href="index.html" class="navbar-brand">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100" alt="Company Logo" />
+          <span>Saudagar Creative</span>
+        </a>
+        <div class="navbar-toggle" id="navbarToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+          <a href="index.html">Beranda</a>
+          <a href="about.html">Tentang Kami</a>
+          <a href="service.html">Layanan</a>
+          <a href="portofolio.html">Portofolio</a>
+          <a href="#footer">Kontak</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center mb-52 mt-24">
+      <div class="text-5xl font-semibold text-center text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl max-sm:mt-24 max-sm:text-center"> Yuk bergabung bersama kami! </div>
+      <form class="flex flex-col px-8 py-10 mt-10 mr-50 max-w-full bg-sky-600 rounded-[51px] w-[90%] md:w-[968px] max-md:px-5 max-sm:mb-52" onsubmit="return myFunction()">
+        <div class="text-3xl font-medium text-white max-sm:text-xl">Nama</div>
+        <input type="text" placeholder="Nama Anda" name="nama" class="box-border flex relative flex-col shrink-0 py-2.5 pr-52 pl-2.5 mt-5 border border-solid border-stone-300 rounded-[50px] max-sm:pr-2.5 max-sm:-mr-0" required />
+        <div class="mt-9 text-3xl font-medium text-white max-sm:text-xl">Telepon</div>
+        <input type="tel" placeholder="No. Telepon Anda" name="notelp" class="box-border flex relative flex-col shrink-0 py-2.5 pr-52 pl-2.5 mt-5 border border-solid border-stone-300 rounded-[50px] max-sm:pr-2.5" pattern="[0-9]{10,13}" title="Nomor telepon harus terdiri dari 10 hingga 13 angka" required />
+        <div class="mt-9 text-3xl font-medium text-white max-sm:text-xl">Email</div>
+        <input type="email" placeholder="Email Anda" name="email" class="box-border flex relative flex-col shrink-0 py-2.5 pr-52 pl-2.5 mt-5 border border-solid border-stone-300 rounded-[50px] max-sm:pr-2.5" required />
+        <div class="mt-7 text-3xl font-medium text-white max-sm:text-xl">Nama Perusahaan</div>
+        <input type="text" placeholder="Nama Perusahaan" name="namapt" class="box-border flex relative flex-col shrink-0 py-2.5 pr-52 pl-2.5 mt-5 border border-solid border-stone-300 rounded-[50px] max-sm:pr-2.5" required />
+        <div class="mt-8 text-3xl font-medium text-white max-sm:text-xl">Layanan</div>
+        <select name="Layanan" class="box-border flex relative flex-col shrink-0 self-start py-2.5 pr-72 pl-5 mt-5 rounded-[50px] max-sm:pr-24" required>
+          <option value="" disabled selected>Select your option</option>
+          <option value="layanan1">Paket 1</option>
+          <option value="layanan2">Paket 2</option>
+        </select>
+        <button type="submit" class="box-border flex relative flex-col shrink-0 px-6 py-4 mt-32 mx-auto text-3xl font-bold text-sky-600 bg-white appearance-none cursor-pointer rounded-[50px] max-sm:mx-auto max-sm:mt-10 max-sm:text-xl"> Kirim </button>
+      </form>
+    </div>
+    
+    <div id="footer" class="flex overflow-hidden relative flex-col justify-center items-center px-16 py-16 mt-28 fill-sky-600 min-h-[841px] max-md:px-5">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/476af924719178630fbbc31b7fce66fea9bd2003fb1bdc327aae009dca40bae7?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" class="object-cover absolute inset-0 size-full" />
+      <div class="flex relative flex-col mt-52 w-full max-w-[1186px] max-md:mt-10 max-md:max-w-full">
+        <div class="max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div class="flex flex-col w-3/5 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" class="w-full aspect-[2.13] max-md:mt-10 max-md:max-w-full" />
+            </div>
+            <div class="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col grow mt-9 text-3xl font-semibold text-white max-md:mt-10 max-md:max-w-full">
+                <div class="text-5xl max-md:max-w-full max-md:text-4xl max-sm:text-center"> Hubungi Kami: </div>
+                <div class="mt-14 text-4xl max-md:mt-10 max-md:max-w-full max-sm:mx-auto max-sm:text-xl max-sm:text-center"> PT. Saudagar Creative <br />
+                  <span class="text-xl not-italic font-semibold"> +62 XXXX XXXX <br />
+                  </span>
+                  <span class="text-xl not-italic font-semibold"> saudagarcreative@gmail.com </span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="self-center mt-52 text-2xl font-semibold text-white max-md:mt-10 max-sm:text-xl max-sm:text-center"> ©  2024. SaudagarCreative. </div>
+      </div>
+    </div>
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-[#F8C219] text-white text-3xl font-extrabold">&uarr;</button>
+    <script>
+      function myFunction(event) {
+        event.preventDefault(); // Prevent form submission for now
+        var nama = document.getElementsByName("nama")[0].value;
+        var notelp = document.getElementsByName("notelp")[0].value;
+        var email = document.getElementsByName("email")[0].value;
+        var namapt = document.getElementsByName("namapt")[0].value;
+        var layanan = document.getElementsByName("Layanan")[0].value;
+        if (nama === "" || notelp === "" || email === "" || namapt === "" || layanan === "") {
+          alert("Data tidak boleh kosong");
+          return false;
+        } else {
+          // Show the modal
+          alert("Formulir berhasil dikirim");
+          return true;
+        }
+      }
+      var toTopButton = document.getElementById("to-top-button");
+      // When the user scrolls down 200px from the top of the document, show the button
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          toTopButton.classList.remove("hidden");
+        } else {
+          toTopButton.classList.add("hidden");
+        }
+      }
+      // When the user clicks on the button, smoothy scroll to the top of the document
+      function goToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      document.getElementById('navbarToggle').addEventListener('click', function() {
+        var navbarContainer = document.getElementById('navbarContainer');
+        if (navbarContainer.className === "navbar-container") {
+          navbarContainer.className += " responsive";
+        } else {
+          navbarContainer.className = "navbar-container";
+        }
+      });
+    </script>
+  </body>
+</html>

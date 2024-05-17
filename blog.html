@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blog</title>
+  <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&" 
+  type="image/x-icon" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+          'poppins': ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            clifford: "#da373d",
+            saudagar: "#0088da",
+          },
+          fontSize: {
+            '16': '16px',
+            '20': '20px',
+            '24': '24px',
+            '28': '28px',
+            '32': '32px',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body>
+
+<div class="sticky">
+  <div class="navbar-container" id="navbarContainer">
+    <a href="index.html" class="navbar-brand">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/563a2086ae7775f7ff153f60bac9b2a25e2ee754bab46ca386084ea214ce1581?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100" alt="Company Logo" />
+      <span>Saudagar Creative</span>
+    </a>
+    <div class="navbar-toggle" id="navbarToggle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </div>
+    <div class="navbar-menu" id="navbarMenu">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="service.html">Layanan</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="#footer">Kontak</a>
+    </div>
+  </div>
+</div>
+
+<div
+      class="flex flex-col self-center px-28 mt-72 w-full font-semibold text-black max-w-[1205px] max-md:mt-10 max-md:max-w-full max-sm:px-5"
+    >
+      <div class="text-5xl text-center max-md:max-w-full max-md:text-4xl">
+        Lorem Ipsum Dolor
+      </div>
+      <div class="shrink-0 mt-4 bg-zinc-300 h-[377px] max-md:max-w-full"></div>
+      <div
+        class="mt-9 text-2xl font-medium text-justify max-md:max-w-full"
+      >
+        Kami adalah
+        <span class="font-bold">Saudagar Creative</span>
+        . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus
+        mi, pharetra quis porttitor eu, porta nec mi. Sed sit amet faucibus
+        massa. Maecenas sodales, dui et mattis dictum, turpis lacus lobortis
+        quam, ut sagittis felis quam non justo. Interdum et malesuada fames ac
+        ante ipsum.
+        <br />
+        <br />
+        Proin tellus mi, pharetra quis porttitor eu, porta nec mi. Sed sit amet
+        faucibus massa. Maecenas sodales, dui et mattis dictum, turpis lacus
+        lobortis quam, ut sagittis felis quam non justo. Interdum et malesuada
+        fames ac ante ipsum.
+        <br />
+        <br />
+        Kami adalah
+        <span class="font-bold">Saudagar Creative</span>
+        . Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tellus
+        mi, pharetra quis porttitor eu, porta nec mi. Sed sit amet faucibus
+        massa. Maecenas sodales, dui et mattis dictum, turpis lacus lobortis
+        quam, ut sagittis felis quam non justo. Interdum et malesuada fames ac
+        ante ipsum.
+      </div>
+    </div>  
+
+    <div id="blog" class="flex flex-col mt-24 px-5">
+      <div class="flex flex-col px-5 mx-auto mt-16 mb-20 font-poppins font-semibold max-w-[613px]">
+        <div
+          class="mx-auto mt-24 w-full text-3xl text-center text-black max-md:max-w-full max-md:text-4xl"
+        >
+          <span class="font-bold"> <span class="font-extrabold">Yuk Baca Blog</span> Lainnya!</span>
+          <br />
+        </div> 
+        <button
+          class="box-border relative shrink-0 px-9 py-4 mx-auto mt-10 text-3xl text-center bg-saudagar appearance-none cursor-pointer rounded-[50px] text-[white]"
+          data-el="button-1"
+        ><a href="index.html" style="text-decoration: none;">Baca</a>
+        </button> 
+      </div>
+    </div>
+
+<div id="footer"
+  class="flex overflow-hidden relative flex-col justify-center items-center px-16 py-16 mt-28 fill-sky-600 min-h-[841px] max-md:px-5"
+>
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/476af924719178630fbbc31b7fce66fea9bd2003fb1bdc327aae009dca40bae7?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+    class="object-cover absolute inset-0 size-full"
+  />
+  <div
+    class="flex relative flex-col mt-52 w-full max-w-[1186px] max-md:mt-10 max-md:max-w-full"
+  >
+    <div class="max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+        <div class="flex flex-col w-3/5 max-md:ml-0 max-md:w-full">
+          <img
+            loading="lazy"
+            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/652b220187e374435a261a051f416b6b87121f4117dfb9f5403f97378e2183f1?apiKey=f696dd3e51664ad181dc4a1c50d0b69b&"
+            class="w-full aspect-[2.13] max-md:mt-10 max-md:max-w-full"
+          />
+        </div>
+        <div class="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
+          <div
+            class="flex flex-col grow mt-9 text-3xl font-semibold text-white max-md:mt-10 max-md:max-w-full"
+          >
+            <div
+              class="text-5xl max-md:max-w-full max-md:text-4xl max-sm:text-center"
+            >
+              Hubungi Kami:
+            </div>
+            <div
+              class="mt-14 text-4xl max-md:mt-10 max-md:max-w-full max-sm:mx-auto max-sm:text-xl max-sm:text-center"
+            >
+              PT. Saudagar Creative
+              <br />
+              <span class="text-xl not-italic font-semibold">
+                +62 XXXX XXXX
+                <br />
+              </span>
+              <span class="text-xl not-italic font-semibold">
+                saudagarcreative@gmail.com
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="self-center mt-52 text-2xl font-semibold text-white max-md:mt-10 max-sm:text-xl max-sm:text-center"
+    >
+      ©  2024. SaudagarCreative.
+    </div>
+  </div>
+</div>
+
+<button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-[#F8C219] text-white text-3xl font-extrabold">&uarr;</button>
+
+
+<script>
+  var toTopButton = document.getElementById("to-top-button");
+
+// When the user scrolls down 200px from the top of the document, show the button
+window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopButton.classList.remove("hidden");
+    } else {
+        toTopButton.classList.add("hidden");
+    }
+}
+
+// When the user clicks on the button, smoothy scroll to the top of the document
+function goToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+  document.getElementById('navbarToggle').addEventListener('click', function() {
+    var navbarContainer = document.getElementById('navbarContainer');
+    if (navbarContainer.className === "navbar-container") {
+      navbarContainer.className += " responsive";
+    } else {
+      navbarContainer.className = "navbar-container";
+    }
+  });
+</script>
+
+</body>
+</html>
