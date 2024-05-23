@@ -113,12 +113,15 @@ body {
 }
 
 .navbar-menu a:hover {
-    background-color: #ddd; /* Change to your hover color */
-    color: black;
+    /* background-color: #ddd; Change to your hover color */
+    color: rgba(26, 25, 25, 0.558);
 }
 
 .navbar-menu a.active {
-    background-color: #F8C219;
+    /* background-color: #F8C219; */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
     color: white;
     border-radius: 10px;
 }
